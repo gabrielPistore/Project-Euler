@@ -6,7 +6,7 @@ def largest_prime_factor(num):
         return 1
 
     factor = 2
-    while factor < num:
+    while factor <= num:
         if num % factor == 0:
             num /= factor
         else:
