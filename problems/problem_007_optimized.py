@@ -10,7 +10,7 @@ def isPrime(n):
         return False
     elif n < 9:  # we have already excluded 4,6 and 8
         return True
-    if n % 3 == 0:
+    elif n % 3 == 0:
         return False
     else:
         r = math.floor(
