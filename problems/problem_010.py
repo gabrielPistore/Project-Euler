@@ -29,12 +29,14 @@ def isPrime(n):
 
 
 def summation_of_primes(threshold):
-    summation = 0
-    n = 2
+    summation = 2 + 3
+    n = 5
     while n < threshold:
         if isPrime(n):
             summation += n
-        n += 1
+        if isPrime(n + 2):
+            summation += n + 2
+        n += 6
     return summation
 
 
